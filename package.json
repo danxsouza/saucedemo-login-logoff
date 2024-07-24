@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo-login-logoff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danxsouza/saucedemo-login-logoff.git"
+  },
+  "author": "Danilo Batista de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danxsouza/saucedemo-login-logoff/issues"
+  },
+  "homepage": "https://github.com/danxsouza/saucedemo-login-logoff#readme"
+}
