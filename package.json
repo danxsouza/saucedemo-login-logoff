@@ -4,7 +4,12 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cypress-cli": "cypress open",
+    "cypress-headed": "cypress run -b chrome",
+    "cypress-headless": "cypress run --headless -b chrome",
+    "eslint": "eslint cypress",
+    "eslint-fix": "eslint cypress --fix"
   },
   "repository": {
     "type": "git",
@@ -12,8 +17,22 @@
   },
   "author": "Danilo Batista de Souza",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run eslint-fix"
+    }
+  },
   "bugs": {
     "url": "https://github.com/danxsouza/saucedemo-login-logoff/issues"
   },
-  "homepage": "https://github.com/danxsouza/saucedemo-login-logoff#readme"
+  "homepage": "https://github.com/danxsouza/saucedemo-login-logoff#readme",
+  "devDependencies": {
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-chai-friendly": "^1.0.1",
+    "eslint-plugin-cypress": "^3.4.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.4",
+    "prettier": "^3.3.3"
+  }
 }
